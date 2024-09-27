@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import place from "@/public/placeholder.png";
+import callImg from "@/public/icons/call.svg";
+import codeImg from "@/public/icons/code.svg";
 
 const ChatHeader = () => {
   return (
@@ -17,8 +19,12 @@ const ChatHeader = () => {
         <h2 className=" h-full text-lg font-semibold text-white">Anurag</h2>
       </div>
       <div className="flex gap-2 mr-4">
-        <div className="h-10 w-10 bg-white rounded-xl"></div>
-        <div className="h-10 w-10 bg-white rounded-xl"></div>
+        <div className="h-10 w-10 bg-slate-200 rounded-xl object-cover object-center overflow-hidden p-1">
+          <Image src={callImg} alt="call"/>
+        </div>
+        <div className="h-10 w-10 bg-slate-200 rounded-xl object-cover object-center overflow-hidden p-1">
+          <Image src={codeImg} alt="code"/>
+        </div>
       </div>
     </div>
   );

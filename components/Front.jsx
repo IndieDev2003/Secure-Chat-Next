@@ -4,6 +4,11 @@ import { Theme } from "@radix-ui/themes";
 import CircleBtn from "@/components/ui/CircleBtn";
 import Profile from "@/components/ui/Profile";
 import ChatHeader from "./ui/ChatHeader";
+import ConvoHeader from "./ui/ConvoHeader";
+
+
+import Logo from '@/public/icons/logo.svg'
+import {setting,logo,search,write} from '@/public/icons'
 
 const Front = () => {
   return (
@@ -16,16 +21,16 @@ const Front = () => {
     >
       <div className="flex">
         <div className="h-[100vh] w-20 bg-gray-600 flex flex-col justify-start items-center p-1">
-          <CircleBtn />
-          <CircleBtn />
-          <CircleBtn />
-          <CircleBtn />
-          <CircleBtn />
-          <CircleBtn />
+          <CircleBtn PlaceHolder={logo}/>
+          <CircleBtn PlaceHolder={setting}/>
+          <CircleBtn PlaceHolder={search}/>
+          <CircleBtn PlaceHolder={write}/>
+      
         </div>
-        <div className="h-[100vh] w-1/3 bg-gray-700">
-          <div className="h-28 w-full bg-gray-900 p-5">
-            <h2 className="text-2xl text-white font-thin">Secure Chat</h2>
+        <div className="h-[100vh] w-1/3 bg-gray-700  border-r-2 border-red-500">
+          <div className="h-28 w-full bg-gray-900 p-2">
+            
+            <ConvoHeader/>
           </div>
           <Profile />
         </div>
