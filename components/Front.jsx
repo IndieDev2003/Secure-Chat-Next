@@ -7,8 +7,8 @@ import ChatHeader from "./ui/ChatHeader";
 import ConvoHeader from "./ui/ConvoHeader";
 
 
-import Logo from '@/public/icons/logo.svg'
-import {setting,logo,search,write} from '@/public/icons'
+// import Logo from '@/public/icons/logo.svg'
+import {setting,logo,search,write,support} from '@/public/icons'
 
 const Front = () => {
   return (
@@ -25,6 +25,7 @@ const Front = () => {
           <CircleBtn PlaceHolder={setting}/>
           <CircleBtn PlaceHolder={search}/>
           <CircleBtn PlaceHolder={write}/>
+          <CircleBtn PlaceHolder={support}/>
       
         </div>
         <div className="h-[100vh] w-1/3 bg-gray-700  border-r-2 border-red-500">
